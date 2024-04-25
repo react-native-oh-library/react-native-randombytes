@@ -1,6 +1,6 @@
 {
   "name": "react-native-randombytes",
-  "version": "3.6.1",
+  "version": "3.6.1-0.0.1",
   "description": "randomBytes for react-native",
   "main": "index.js",
   "repository": {
@@ -10,13 +10,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "harmony": { 
+    "alias": "react-native-randombytes",
+    "codegenConfig": {
+      "specPaths": ["./src"]     
+    }   
+  },
   "keywords": [
     "react-component",
     "react-native",
     "randomBytes",
     "rng",
     "ios",
-    "android"
+    "android",
+    "src",
+    "lib",
+    "harmony"
   ],
   "dependencies": {
     "buffer": "^4.9.1",

@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "random_bytes",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

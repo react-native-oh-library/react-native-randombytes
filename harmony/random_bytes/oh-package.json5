@@ -1,0 +1,11 @@
+{
+  "name": "react-native-randombytes",
+  "version": "3.6.1-0.0.1",
+  "description": "randomBytes for react-native",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": 'file:../react_native_openharmony'
+  }
+}

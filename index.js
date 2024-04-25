@@ -1,9 +1,17 @@
+import { TurboModuleRegistry, Platform } from 'react-native';
+
 if (typeof Buffer === 'undefined') {
   global.Buffer = require('buffer').Buffer
 }
 
+const isHarmonyOs = Platform.OS === 'harmony';
+
+
 let sjcl = require('sjcl')
-let RNRandomBytes = require('react-native').NativeModules.RNRandomBytes
+let RNRandomBytes = TurboModuleRegistry ?
+ TurboModuleRegistry.get('RandomBytesNativeModule') :
+  require('react-native').NativeModules.RNRandomBytes
+
 
 function noop () {}
 
@@ -12,8 +20,9 @@ function toBuffer (nativeStr) {
 }
 
 function init () {
-  if (RNRandomBytes.seed) {
-    let seedBuffer = toBuffer(RNRandomBytes.seed)
+  let seed = isHarmonyOs ? RNRandomBytes.getConstants().seed : RNRandomBytes.seed;
+  if (seed) {
+    let seedBuffer = toBuffer(seed)
     addEntropy(seedBuffer)
   } else {
     seedSJCL()
