@@ -10,11 +10,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "harmony": { 
+  "harmony": {
     "alias": "react-native-randombytes",
     "codegenConfig": {
-      "specPaths": ["./src"]     
-    }   
+      "specPaths": [
+        "./src"
+      ]
+    }
   },
   "keywords": [
     "react-component",
@@ -29,6 +31,7 @@
   ],
   "dependencies": {
     "buffer": "^4.9.1",
+    "react-native-randombytes": "^3.6.1",
     "sjcl": "^1.0.3"
   },
   "author": "Mark Vayngrib <mark.vayngrib@lablz.com> (http://github.com/mvayngrib)",
