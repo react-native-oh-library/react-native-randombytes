@@ -5,4 +5,4 @@ import { randomBytes as randomBytesHarmony } from './index.harmony';
 const isHarmony = Platform.OS === 'harmony';
 
 export const randomBytes = isHarmony ? randomBytesHarmony : randomBytesAndroidIos;
-export { seedSJCL } from 'react-native-randombytes';
+export { seedSJCL } from './index.harmony';
