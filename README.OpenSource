@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-randombytes",
+        "License": "MIT License",
+        "License File": "https://github.com/react-native-oh-library/react-native-randombytes/blob/sig/LICENSE",
+        "Version Number": "3.0.0-alpha.1",
+		"Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/react-native-oh-library/react-native-randombytes",
+        "Description": "A <LinearGradient> element for React Native"
+    }
+]
