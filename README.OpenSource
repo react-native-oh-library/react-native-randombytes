@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-randombytes",
+        "License": "MIT License",
+        "License File": "https://github.com/mvayngrib/react-native-randombytes/blob/master/LICENSE",
+        "Version Number": "3.6.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/mvayngrib/react-native-randombytes",
+        "Description": "randomBytes for react-native"
+    }
+]
